@@ -14,59 +14,41 @@
 </head>
 
 <body class="bg-cream-50 min-h-screen font-serif">
+    <!-- Toggle Button (слева) -->
+    <button id="menu-btn" class="fixed top-6 left-4 z-[10000] bg-[#6C1D2B] text-white p-3 rounded-md shadow-lg">
+        <i data-feather="menu"></i>
+    </button>
+
+    <!-- Sidebar -->
     <div class="fixed top-0 left-0 h-full z-[9999]">
-        <!-- Sidebar -->
         <nav id="sidebar"
-            class="fixed top-0 left-0 h-full w-64 bg-[#6C1D2B] text-white z-50 shadow-lg transform -translate-x-full transition-transform duration-300 md:translate-x-0">
-            <!-- Header -->
-            <a href="index.html" class="block">
-                <div class="p-6 text-2xl font-serif text-white border-b border-white/20 z-[1001]">
-                    Բովանդակություն
-                </div>
-            </a>
-            <!-- Navigation Links -->
+            class="fixed top-0 left-0 h-full w-64 bg-[#6C1D2B] text-white z-50 shadow-lg transform -translate-x-full transition-transform duration-300">
+
+            <!-- Back Button справа -->
+            <div class="p-6 border-b border-white/20 flex justify-end items-center">
+                <a href="index.html"
+                    class="w-12 h-12 flex items-center justify-center bg-[#6C1D2B] text-white text-3xl font-extrabold rounded-md hover:bg-[#7B1C2A] transition">
+                    ←
+                </a>
+            </div>
+
+            <!-- Navigation -->
             <ul class="mt-6 space-y-4 px-6 text-lg">
-                <li>
-                    <a href="songs.html" class="block px-3 py-2 rounded-md transition-all duration-300
-                  hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
-                        Երգեր
-                    </a>
-                </li>
-                <li>
-                    <a href="poems.html" class="block px-3 py-2 rounded-md transition-all duration-300
-    hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
-                        Բանաստեղծություններ (տեսահոլովակներ)
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html" class="block px-3 py-2 rounded-md transition-all duration-300
-        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
-                        Կենսագրություն
-                    </a>
+                <li><a href="songs.html"
+                        class="block px-3 py-2 rounded-md hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">Երգեր</a>
                 </li>
 
-                <li>
-                    <a href="index.html" class="block px-3 py-2 rounded-md transition-all duration-300
-        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
-                        Հայտնի ստեղծագործություններ
-                    </a>
-                </li>
+                <li><a href="poems.html"
+                        class="block px-3 py-2 rounded-md hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">Բանաստեղծություններ
+                        (տեսահոլովակներ)</a></li>
 
-                <li>
-                    <a href="index.html" class="block px-3 py-2 rounded-md transition-all duration-300
-        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
-                        Մեջբերումներ
-                    </a>
+                <li><a href="kensagrucyun.html"
+                        class="block px-3 py-2 rounded-md hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">Կենսագրություն</a>
                 </li>
             </ul>
         </nav>
     </div>
 
-    <!-- Mobile Toggle Button -->
-    <button id="menu-btn"
-        class="md:hidden fixed top-4 left-4 z-[10000] bg-[#6C1D2B] text-white p-2 rounded-md focus:outline-none shadow-lg">
-        <i data-feather="menu"></i>
-    </button>
     <main class="container mx-auto px-4 py-12 max-w-5xl">
         <h1 class="text-maroon-800 text-5xl md:text-6xl text-center mb-16 font-bold tracking-wider">Բանաստեղծություններ
         </h1>
@@ -115,7 +97,7 @@
             </article>
 
         </div>
-        
+
         <script>
             feather.replace(); // иконки
 
@@ -172,7 +154,7 @@
         }
     </script>
 
-    
+
 </body>
 
 </html>
